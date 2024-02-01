@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ExchangeRate: View {
-    @State var leftImage: String
+    @State var leftImage: ImageResource
     @State var text: String
-    @State var rightImage: String
+    @State var rightImage: ImageResource
     
     var body: some View {
         HStack {
@@ -34,9 +34,9 @@ struct ExchangeRate: View {
 
 struct ExchangeRate_Previews: PreviewProvider {
     static var previews: some View {
-        ExchangeRate(leftImage: "goldpenny",
+        ExchangeRate(leftImage: .goldpenny,
                      text: "1 Gold Penny = 4 Silver Pieces",
-                     rightImage: "silverpiece")
+                     rightImage: .silverpiece)
             .previewLayout(.sizeThatFits)
     }
 }
